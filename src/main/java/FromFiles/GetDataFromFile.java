@@ -24,7 +24,7 @@ public class GetDataFromFile {
      JSONObject souvenir = (JSONObject) souvenirList.get("Сувенир");
 
      String souvenirName = (String) souvenir.get("Название_позиции");
-     String souvenirManufacturer = getПроизводитель(souvenir);
+     String souvenirManufacturer = (String) souvenir.get("Производитель");
      String souvenirManufacturingDate = (String) souvenir.get("Дата Выпуска");
      String souvenirPrice = (String) souvenir.get("Цена");
      System.out.println("Название_позиции: "+ souvenirName);
@@ -32,9 +32,5 @@ public class GetDataFromFile {
      System.out.println("Дата Выпуска: "+ souvenirManufacturingDate);
      System.out.println("Цена: "+ souvenirPrice);
  }
-
-    private static String getПроизводитель(JSONObject souvenir) {
-        return (String) souvenir.get("Производитель");
-    }
 
 }
