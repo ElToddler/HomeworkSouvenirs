@@ -10,10 +10,6 @@ public class ParseSouvenir {
         String souvenirManufacturer = (String) souvenir.get("Производитель");
         String souvenirManufacturingDate = (String) souvenir.get("Дата Выпуска");
         String souvenirPrice = (String) souvenir.get("Цена");
-        //printing it out
-        System.out.println("Название_позиции: "+ souvenirName);
-        System.out.println("Производитель: "+ souvenirManufacturer);
-        System.out.println("Дата Выпуска: "+ souvenirManufacturingDate);
-        System.out.println("Цена: "+ souvenirPrice);
+
     }
 }
