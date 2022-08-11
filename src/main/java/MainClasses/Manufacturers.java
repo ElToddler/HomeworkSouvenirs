@@ -1,26 +1,26 @@
 package MainClasses;
 
 public class Manufacturers {
- private String manufacturerName;
+ private String manufacturer;
  private String manufacturerCountry;
 
-    public void setManufacturerName(String manufacturerName) {
-        this.manufacturerName = manufacturerName;
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
     }
 
     public void setManufacturerCountry(String manufacturerCountry) {
         this.manufacturerCountry = manufacturerCountry;
     }
 
-    public String getManufacturerName() {
-        return manufacturerName;
+    public String getManufacturer() {
+        return manufacturer;
     }
 
     public String getManufacturerCountry() {
         return manufacturerCountry;
     }
     public String toString() {
-        return  "Manufacturer Name = " + manufacturerName +
+        return  "Manufacturer Name = " + manufacturer +
                 "\n Country of Origin  ='" + manufacturerCountry + "\n\n\n";
     }
 }
